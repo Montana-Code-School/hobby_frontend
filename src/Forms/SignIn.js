@@ -23,7 +23,7 @@ class SignInModalBody extends Component {
   }
 
   signIn() {
-    axios.post('/signin', {
+    axios.post('/signIn', {
       username: this.state.username
     }).then(()=>{
       this.closeModal();
